@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>ly/荻花州-2560x1440.jpg</file>
+        <file>ly/渌华池-2560x1440.png</file>
+        <file>ly/群玉阁-2560x1440.png</file>
+        <file>ly/轻策山其一-2560x1440.png</file>
+    </qresource>
+</RCC>

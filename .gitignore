@@ -1,0 +1,40 @@
+# ==================== 全局忽略：所有子目录都生效 ====================
+# Visual Studio 缓存目录（所有子目录下的 .vs 都忽略）
+.vs/
+
+# 预编译头文件（所有子目录下的 .ipch 都忽略）
+*.ipch
+
+# 编译输出目录（所有子目录下的 Debug/Release/x64 都忽略）
+**/Debug/
+**/Release/
+**/x64/
+**/Win32/
+
+# Qt 自动生成的垃圾文件
+*moc_*.cpp
+*qrc_*.cpp
+*.ui.h
+
+# 编译中间文件
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.tlog
+*.recipe
+
+# 系统/压缩包等无用文件
+*.log
+*.sdf
+*.opensdf
+*.suo
+*.db
+*.tmp
+*.bak
+*.zip
+*.rar
+*.7z
+*.exe
+.DS_Store
+Thumbs.db

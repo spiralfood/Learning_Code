@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/puzzle">
+        <file>璃月概念组图/荻花州-2560x1440.jpg</file>
+        <file>璃月概念组图/渌华池-2560x1440.png</file>
+        <file>璃月概念组图/南天门-2560x1440.png</file>
+        <file>璃月概念组图/轻策山其二-2560x1440.png</file>
+        <file>璃月概念组图/轻策山其一-2560x1440.png</file>
+        <file>璃月概念组图/群玉阁-2560x1440.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
