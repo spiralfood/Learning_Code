@@ -51,45 +51,123 @@
 //	cout << ans;
 //	return 0;
 //}
+//
+//#include<iostream>
+//#include<algorithm>
+//using namespace std;
+//#define ll long long int
+//ll c1[100000];
+//ll c2[100000];
+//ll c3[100000];
+//ll min_sum = 0;
+//int main() {
+//	ll n, S;
+//	ios::sync_with_stdio(0);
+//	cin.tie(0);
+//	cout.tie(0);
+//	cin >> n >> S;
+//	int n1 = n;
+//	for (int i = 0; i < n; i++) {
+//		cin >> c1[i] >> c2[i];
+//
+//	}
+//	while (1) {
+//		ll sum = 0;
+//		for (int i = 0; i < n; i++) {
+//			if (c2[i]>0) {
+//				sum += c1[i];
+//			}
+//			c2[i]--;
+//		}
+//		if (sum > S) {
+//			for (int i = 0; i < n; i++) {
+//				c3[i] = c2[i];
+//			}
+//			sort(c3, c3 + n);
+//			ll poi;
+//			for (int i = 0; i < n; i++) {
+//				if (c3[i] > 0) {
+//					poi = i;
+//					break;
+//				}
+//			}
+//			min_sum += S*(c3[poi]+1);
+//			for (int i = 0; i < n; i++) {
+//				c2[i]-=c3[poi];
+//			}
+//		}
+//		else {
+//			sum = 0;
+//			for (int i = 0; i < n; i++) {
+//				c2[i]++;
+//				if (c2[i] > 0) {
+//					sum += c1[i] * c2[i];
+//				}
+//			}
+//			min_sum += sum;
+//			break;
+//		}
+//	}
+//	cout << min_sum;
+//	return 0;
+////}
+//#include<algorithm>
+//#include<iostream>
+//#define ll long long int
+//class solid {
+//public:
+//	ll a=0;
+//	ll b=0;
+//};
+//solid grp[100005];
+//using namespace std;
+//bool cmp(solid s1,solid s2) {
+//	return s1.b < s2.b;
+//}
+//int main() {
+//	ll n, S;
+//	cin >> n >> S;
+//	for (int i = 0; i < n; i++) {
+//		cin >> grp[i].a >> grp[i].b;
+//	}
+//	sort(grp, grp + n, cmp);
+//	ll min_sum=0;
+//	ll sum = 0;
+//	ll bot = 0;
+//	ll cnt = 0;
+//	for (int i = 0; i < n; i++) {
+//		sum += grp[i].a;
+//	}
+//	while (1) {
+//		if (sum > S) {
+//			min_sum += S * (grp[cnt].b- (cnt > 0 ? grp[cnt - 1].b : 0));
+//			sum -= grp[cnt].a;
+//			//bot = grp[cnt].b;
+//			cnt++;
+//		}
+//		else {
+//				for (int i = cnt; i < n; i++) {
+//					min_sum += (grp[i].b-(cnt>0?grp[cnt-1].b:0)) * grp[i].a;
+//				}
+//			
+//			
+//			break;
+//		}
+//	}
+//
+//
+//	cout << min_sum;
+//	return 0;
+//}
 
 #include<iostream>
 using namespace std;
 #define ll long long int
-ll c1[100000];
-ll c2[100000];
-ll min_sum = 0;
-int main() {
-	ll n, S;
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
-	cin >> n >> S;
-	int n1 = n;
-	for (int i = 0; i < n; i++) {
-		cin >> c1[i] >> c2[i];
 
-	}
-	while (1) {
-		ll sum = 0;
-		for (int i = 0; i < n; i++) {
-			if (c2[i]>0) {
-				sum += c1[i];
-			}
-			c2[i]--;
-		}
-		if (sum > S) min_sum += S;
-		else {
-			sum = 0;
-			for (int i = 0; i < n; i++) {
-				c2[i]++;
-				if (c2[i] > 0) {
-					sum += c1[i] * c2[i];
-				}
-			}
-			min_sum += sum;
-			break;
-		}
-	}
-	cout << min_sum;
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0), cout.tie(0);
+	ll n, m;
+
 	return 0;
 }
